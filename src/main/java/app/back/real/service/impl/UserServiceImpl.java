@@ -41,7 +41,6 @@ public class UserServiceImpl implements UserService {
             }
         } catch (Exception e) {
             log.error("Error al iniciar sesión: " + e.getMessage());
-            e.printStackTrace();
             return null;
         }
     }
@@ -55,8 +54,7 @@ public class UserServiceImpl implements UserService {
 
         }catch (Exception e) {
             log.error("Error al registrar usuario: " + e.getMessage());
-            e.printStackTrace();
-            return null;
+            return 0;
         }
 
     }
